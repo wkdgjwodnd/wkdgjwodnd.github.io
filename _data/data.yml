@@ -1,207 +1,167 @@
-# ---------------------------------
-# 기본 사이드바
-# ---------------------------------
+#
+#  HEO, Jae-Woong  –  CV DATA FILE
+#
+
 sidebar:
   position: right
   about: true
   education: true
 
-  # 프로필
-  name: 허재웅
-  tagline: Vehicle & Embedded Cyber-Security Researcher
-  avatar: profile.png   # /assets/images/ 에 100×100 이미지 넣고 파일명 지정
+  # ── Profile ───────────────────────────────────────────────
+  name: 허 재 웅  (Jae-Woong Heo)
+  tagline: Automotive Cyber-Security Engineer
+  avatar: profile.png            # 100×100 이미지(assets/images)
 
-  # 연락처
+  # ── Contacts / Links ──────────────────────────────────────
   email: wkdgjwodnd26@gmail.com
-  phone: "010-6889-3918"
+  phone: "+82 10-6889-3918"
+  website: https://tinyurl.com/jaewoong-portfolio   # Notion 포트폴리오
+  github: jaewoongheo
+  linkedin: jaewoong-heo
   timezone: Asia/Seoul
-  citizenship: Republic of Korea
-  website:       # 필요하면 전체 URL 입력
-  linkedin:
-  github:
-  telegram:
-  pdf:
+  citizenship: Republic&nbsp;of&nbsp;Korea
+  pdf:                                             # 필요 시 PDF 링크
 
-  # 언어
+  # ── Languages ─────────────────────────────────────────────
   languages:
     title: Languages
     info:
-      - idiom: Korean
-        level: Native
-      - idiom: English
-        level: Intermediate (TOEIC 820)
+    - idiom: Korean
+      level: Native
+    - idiom: English
+      level: B2 (TOEIC 820)
 
-  # 관심사
+  # ── Interests ─────────────────────────────────────────────
   interests:
     title: Interests
     info:
-      - item: Security CTF / Hacking
-      - item: Badminton
-      - item: Cooking Experimental Dishes
+    - item: Embedded C++
+    - item: Rock Climbing
+    - item: Synth Music
 
-# ---------------------------------
-# 커리어 프로필 요약
-# ---------------------------------
+# ════════════════════════════════════════════════════════════
 career-profile:
   title: Career Profile
   summary: |
-    차량 내부 네트워크(Automotive Ethernet, CAN) 및 임베디드 시스템 보안을
-    집중 연구해 온 보안 연구원입니다. SOME/IP 인증·암호화 프로토콜 개선,
-    머신러닝 기반 IDS, ROS 공격 데이터셋 구축 등 산학 과제를 수행하며
-    연구·개발·특허·학회 발표를 경험했습니다. 실차 환경 반영을 위해
-    C/C++·Python·Linux 임베디드 개발과 네트워크 패킷·프로토콜 분석
-    역량을 꾸준히 키우고 있습니다. 산업계에서는 ISO 21434·CSMS 준수를
-    목표로, 안전하고 생산 적용 가능한 차량-보안 솔루션을 설계·구현하는
-    것이 장기 커리어 비전입니다.
+    Automotive Ethernet·ROS 보안 연구 3 년차 보안 엔지니어입니다.
+    – 도메인 대칭키 기반 **SOME/IP 인증 프로토콜**을 설계·C++로 구현해
+      도메인 격리 및 세션 키 유출 위험 ↓50 % 를 달성했습니다.
+    – DoS/MFA/Replay 시나리오 기반 **IDS 데이터셋 3 GB** 구축,
+      Random Forest 탐지 모델 F1 0.94 달성(IEICE ‘22).
+    – ROS UGV, MQTT, LKAS 공격·방어 연구와 특허 3건 보유.
+    임베디드 C/C++, Python, Linux 네트워킹 스택과 암호·PKI에 익숙하며
+    차량 HSM·SecOC·MACsec 통합 플랫폼 구축을 목표로 합니다.
 
-# ---------------------------------
-# 학력
-# ---------------------------------
+# ════════════════════════════════════════════════════════════
 education:
   title: Education
   info:
-    - degree: M.S. in Software (Vehicle Cyber-Security)
-      university: Soongsil University, Seoul
-      time: 2022 – 2024 (예정)
-      details: |
-        • 석사 논문: “Domain Key-based Secure SOME/IP Protocol”  
-        • 주요 과목: Network Security Project, CPS Security, Advanced Crypto  
-        • 연구실: 자동차·자율주행 보안 연구실 (지도교수 조효진)
+  - degree: M.Sc. in Software (Automotive Security)
+    university: Soongsil University, Korea
+    time: 2021 – 2023
+    details: |
+      • 석사학위논문: **도메인 기반 SOME/IP 통신 보안 기술**
+        – Domain Key & PKI 설계, 세션 오버헤드 10 µs ↓.
+  - degree: B.Sc. in Computer Engineering
+    university: Hallym University
+    time: 2015 – 2021
+    details: |
+      • 네트워크보안 프로젝트(학부 캡스톤) A+
 
-    - degree: B.S. in Computer Science
-      university: Soongsil University
-      time: 2018 – 2022
-      details: |
-        • 캡스톤: CAN 버스 IDS 프로토타입 개발  
-        • 네트워크보안·시스템보안·IoT 보안 집중 이수
-
-# ---------------------------------
-# 경력 / 프로젝트 경험
-# ---------------------------------
+# ════════════════════════════════════════════════════════════
 experiences:
   title: Experiences
   info:
-    - role: Research Assistant (Graduate)
-      time: 2021.03 – 2024.02
-      company: Soongsil Univ. Autonomous Vehicle Security Lab
-      details: |
-        • 도메인-기반 SOME/IP 인증·암호화 프로토콜 설계·PoC  
-        • 머신러닝 기반 SOME/IP IDS 데이터셋 생성 및 모델(F1 0.92)  
-        • ROS UGV 공격 시나리오·네트워크 트래픽 수집 → 공개 데이터셋  
-        • 특허 6건·국내 학회 7편·IEICE 국제 저널 1편 주·공저
-        
-    - role: SSAFY 8기 AIoT Track
-      time: 2024.03 – 2024.08
-      company: Samsung SW Academy for Youth
-      details: |
-        • 백엔드 C++/Python, CI/CD, Docker, AWS 기반 서비스 개발  
-        • 공통 프로젝트 우수상(6인 팀) – 실시간 IoT 장치 보안 모니터링 플랫폼
+  - role: Research Engineer (주연구자)
+    time: 2021.03 – 2024.02
+    company: NRF Project “Next-Gen In/Out-Vehicle Security”
+    details: |
+      • 도메인 대칭키 기반 SOME/IP C++ 프로토콜 구현  
+        – Client ID → Domain ID 재정의, Multicast 선택수신 구현  
+      • 세션 설립 오버헤드 +10 µs, 공격 범위 도메인 격리 실증
+      • C++, STL, Linux, Wireshark, TLS/PKI
+  - role: ML Engineer / Data Lead
+    time: 2021.01 – 2022.12
+    company: IITP “AI-based Automotive IDS”
+    details: |
+      • DoS, MFA, Replay 공격 시나리오 설계, 1 M packets 수집  
+      • Random Forest IDS F1 0.94 → IEICE 논문 게재
+  - role: Security Researcher
+    time: 2022.11 – 2024.10
+    company: ADD “UGV ROS Traffic & IDS”
+    details: |
+      • Fake-Node·Packet Injection 등 4 종 ROS 공격, ROSIDS23 확장
+  - role: Vulnerability Researcher
+    time: 2022.03 – 2022.11
+    company: Crypto Research Society
+    details: |
+      • OpenPilot LKAS Dirty Road Patch 공격 전이성 97 % 확인
 
-    - role: Intern Researcher
-      time: 2020.12 – 2021.02
-      company: KISA IoT Security R&D 프로그램
-      details: |
-        • MQTT 접근제어·필터링 ‘UR-MQTT’ 프로토타입 구현  
-        • 테스트베드·시연 영상 제작, 기술 보고서 작성
-
-# ---------------------------------
-# 자격·수료
-# ---------------------------------
+# ════════════════════════════════════════════════════════════
 certifications:
-  title: Certifications
+  title: Patents
   list:
-    - name: CVE Research & Exploit Writing
-      start: 2023
-      end:
-      organization: BoB (Next-Generation Security Leader)
-      credentialid: 
-      credentialurl:
-      credentialname:
-      details: |
-        BoB 11기 트랙A – 차량보안 심화 교육·미니 프로젝트 수행
+  - name: SOME/IP 통신 공격 탐지 시스템·방법
+    start: 2022
+    end:
+    organization: KIPO
+    credentialid: 10-2022-0156117
+    details: |
+      SOME/IP 패킷 Feature 기반 IDS 특허
+  - name: MQTT 메시지 송수신 보안 방법
+    start: 2023
+    organization: KIPO
+    credentialid: 10-2023-0177577
+  - name: 자율주행 차량 사고 분석 장치
+    start: 2023
+    organization: KIPO
+    credentialid: 10-2023-0175884
 
-# ---------------------------------
-# 주요 연구·사이드 프로젝트
-# ---------------------------------
 projects:
   title: Projects
   intro: >
-    연구 과제·사이드 프로젝트 중 핵심만 정리했습니다.
+    주요 연구·개발 프로젝트입니다.
   assignments:
-    - title: Domain Key-based Secure SOME/IP
-      link: "https://doi.org/xxxx"   # 논문 DOI 또는 깃허브
-      tagline: "단일 세션키 한계를 보완한 도메인별 대칭키 교환·멀티캐스트 필터링"
+  - title: Domain-Key Secure SOME/IP
+    link: "#"
+    tagline: "멀티도메인 대칭키 + PKI 기반 인증 프로토콜 (C++)."
+  - title: SOME/IP IDS Dataset
+    link: "#"
+    tagline: "DoS·MFA·Replay 데이터셋 3 GB / RF 탐지모델 F1 0.94."
+  - title: ROS UGV IDS Dataset
+    link: "#"
+    tagline: "ROSIDS23 확장 – Fake-Node / TCP·UDP Injection."
 
-    - title: SOME/IP IDS Dataset & ML Engine
-      link:
-      tagline: "DoS·MFA·Replay 공격 트래픽 수집, Random-Forest 탐지 모델 F1 0.92"
-
-    - title: ROSIDS23-Plus Dataset
-      link:
-      tagline: "ROS UGV 4종 신규 공격 포함 공개 데이터셋 구축"
-
-# ---------------------------------
-# 공개 SW 기여 (예시)
-# ---------------------------------
-oss:
-  title: OSS Contributions
-  contributions:
-    - title: vsomeip patch #123
-      link: "https://github.com/GENIVI/vsomeip/pull/123"
-      tagline: "Multicast client-ID filter 기능 버그 수정 PR"
-
-# ---------------------------------
-# 학술 발표 / 논문
-# ---------------------------------
 publications:
   title: Publications
   papers:
-    - title: SOME/IP Intrusion Detection System Using Machine Learning
-      link: "https://ieeexplore.ieee.org/document/xxxxx"
-      authors: Jae-Woong Heo, Hyunghoon Kim, Hyo Jin Jo
-      conference: IEICE Transactions on Information & Systems, Vol.E105-D No.11 (2022)
+  - title: A Domain Key-based Secure SOME/IP Protocol
+    authors: H. J. Heo, H. H. Kim, H. J. Jo
+    conference: PLOS One (Under Review)
+  - title: SOME/IP IDS Using Machine Learning
+    authors: H. J. Heo et al.
+    conference: IEICE TRANS. INF. & SYST., 2022
+  - title: 도메인 기반 SOME/IP 통신 보안 기술
+    authors: 허재웅
+    conference: Soongsil Univ. Thesis, 2023
 
-    - title: 도메인 기반의 SOME/IP 통신 보안 기술
-      link:
-      authors: 허재웅
-      conference: M.S. Thesis, Soongsil University (2023)
-
-# ---------------------------------
-# 추천인
-# ---------------------------------
-recommendations:
-  title: Recommendations
-  list:
-    - person: 조효진 교수
-      email: hyojin.jo@ssu.ac.kr
-      phone:
-      role: Advisor, Soongsil Univ.
-      recommendation: |
-        “허재웅 연구원은 복잡한 차량 네트워크 프로토콜을 빠르게 분석하고
-        실험 환경으로 옮겨 구현·검증하는 능력이 뛰어나며, 팀워크와 책임감이
-        우수합니다.”
-
-# ---------------------------------
-# 기술 스택
-# ---------------------------------
 skills:
   title: Skills & Proficiency
   toolset:
-    - name: C/C++ (Embedded & Networking)
-      level: 95%
-    - name: Python (Scapy · ML Pipeline)
-      level: 90%
-    - name: SOME/IP · CAN · ROS
-      level: 90%
-    - name: Linux Kernel & Socket
-      level: 85%
-    - name: Machine/Deep Learning (Sklearn, PyTorch)
-      level: 75%
-    - name: Git · CI/CD · Docker
-      level: 75%
+  - name: C/C++ (STL, GCC)
+    level: 90%
+  - name: Python & FastAPI
+    level: 90%
+  - name: SOME/IP / SecOC / MACsec
+    level: 90%
+  - name: ROS 2 & DDS
+    level: 80%
+  - name: Wireshark / Tcpdump
+    level: 80%
+  - name: Machine Learning (scikit-learn)
+    level: 75%
+  - name: Linux & Docker
+    level: 75%
 
-# ---------------------------------
-# 푸터
-# ---------------------------------
 footer: >
-  © 2024 Jae-Woong Heo — Design adapted from Xiaoying Riley’s open-source template.
+  Designed with <i class="fas fa-heart"></i> by Xiaoying Riley. Modified by Jae-Woong Heo.
