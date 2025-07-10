@@ -1,93 +1,168 @@
-basics:
-  name: "허재웅"
-  label: "차량 사이버보안 연구원"
-  picture: "/assets/img/profile.jpg"
-  summary: >
-    SOME/IP 통신 보안, ROS 침입탐지, LKAS Adversarial Attack 등
-    차량 사이버보안 R&D 경험, 특허·논문을 보유
-  website: "https://github.com/wkdgjwodnd"
-  location:
-    city: "Seoul"
-    countryCode: "KR"
-  profiles:
-    - network: "GitHub"
-      username: "wkdgjwodnd"
-      url: "https://github.com/wkdgjwodnd"
-      
-experience:
-  - company: "숭실대학교 차량보안 연구실"
-    position: "Research Assistant / M.S. Student"
-    startDate: "2021-03"
-    endDate: "2024-02"
-    summary: >
-      Automotive Ethernet (SOME/IP) 보안 프로토콜 개선, ML-기반 IDS,
-      ROS UGV 네트워크 공격 데이터셋 구축 등 다양한 국책과제 수행.
-    highlights:
-      - "도메인 대칭키 기반 SOME/IP Auth Protocol 설계·구현"
-      - "SOME/IP Machine-Learning IDS 데이터셋 & 모델 (F1↑ 10%)"
-      - "ROS IDS 공격 데이터셋 (7 공격 시나리오) 구축"
+#
+# =====  PERSONALISE ME!  ===============================================
+#
 
-  - company: "삼성청년 SW 아카데미"
-    position: "AIoT 트랙 프로젝트 우수상"
-    startDate: "2020-07"
-    endDate: "2020-12"
-    highlights:
-      - "IoT 솔루션 개발 및 우수상 수상"
+sidebar:
+  position: right
+  about:   true        # “How to use?” 박스 노출 여부
+  education: true      # 학력은 사이드바로
+
+  # -- Profile -----------------------------------------------------------
+  name: 허재웅 (Heo Jaewoong)
+  tagline: Vehicle Cyber-Security Researcher & Engineer
+  avatar: jaewoong.jpg       # 100×100 이미지  ➜ assets/images/
+
+  # -- Contact -----------------------------------------------------------
+  email: wkdgjwodnd26@gmail.com
+  phone: "010-6889-3918"
+  timezone: Asia/Seoul
+  citizenship: Republic of Korea
+  website: https://wkdgjwodnd.github.io
+  linkedin: jaewoong-heo
+  github: wkdgjwodnd
+  telegram:
+  twitter:
+  bluesky:
+  mastodon:
+  pdf: /assets/Jaewoong_Heo_CV.pdf   # 필요 시
+
+  # -- Languages ---------------------------------------------------------
+  languages:
+    title: Languages
+    info:
+    - idiom: Korean
+      level: Native
+    - idiom: English
+      level: Professional Working
+
+  # -- Interests ---------------------------------------------------------
+  interests:
+    title: Interests
+    info:
+    - item: Automotive Security
+    - item: CTF & Reverse Engineering
+    - item: Hiking / Badminton
+
+# =======================================================================
+
+career-profile:
+  title: Career Profile
+  summary: |
+    M.S-level researcher specialised in **in-vehicle network security**.
+    Designed a domain-key–based secure **SOME/IP** protocol, built ML-based
+    IDS for Automotive Ethernet & ROS, and filed 7 security-related patents.
+    Comfortable with C/C++, Python, ROS 2, vsomeip, Wireshark & Scapy.
+    Passionate about turning research outcomes into production-grade secure
+    mobility solutions.
 
 education:
-  - institution: "숭실대학교"
-    area: "소프트웨어학과"
-    studyType: "M.S."
-    startDate: "2021-03"
-    endDate: "2023-08"
-    gpa: "4.2/4.5"
-    thesis: "도메인 기반 SOME/IP 통신 보안 기술"
+  title: Education
+  info:
+  - degree: M.S. in Software (Vehicle Security)
+    university: Soongsil University, Seoul
+    time: 2021 – 2023
+    details: |
+      Thesis ― **“Domain-based Secure SOME/IP Protocol”**  
+      ▹ GPA 4.12/4.5 ▹ Full research scholarship  
+      ▹ Coursework: Network-Security Project, Cyber-Physical-System Security
+  - degree: B.S. in Software
+    university: Soongsil University, Seoul
+    time: 2017 – 2021
+    details: |
+      ▹ Senior capstone: SOME/IP anomaly detection PoC  
+      ▹ Samsung Software Members (top 5 %)
 
-  - institution: "숭실대학교"
-    area: "소프트웨어학과"
-    studyType: "B.S."
-    startDate: "2014-03"
-    endDate: "2020-02"
-    gpa: "3.8/4.5"
+experiences:
+  title: Experience
+  info:
+  - role: Graduate Research Assistant
+    company: Software & Vehicle Security Lab, Soongsil Univ.
+    time: 2021.03 – 2024.02
+    details: |
+      * Designed **domain-key SOME/IP** protocol → 30 % latency overhead, 1-domain attack containment  
+      * Implemented **ML-based IDS** (Random Forest, SVM) for SOME/IP (92 % F1) & ROS (86 % F1)  
+      * Built **ROSIDS23-Plus** dataset (4 attack classes + 6 GB pcap)  
+      * Co-advised 3 undergraduate teams; won **Samsung SSAFY AIoT 우수상**
+
+  - role: Back-end / Security Intern
+    company: Samsung Youth SW Academy (SSAFY)
+    time: 2023.03 – 2023.08
+    details: |
+      * Led 6-person AIoT project; delivered secure MQTT over TLS + ACL  
+      * CI/CD · Docker · AWS EC2 구축, 코드 리뷰 & 정적 분석 자동화
 
 projects:
-  - name: "도메인 기반 SOME/IP 보안 프로토콜"
-    description: |
-      단일 대칭키 방식을 도메인 분리 키 방식으로 개선하여
-      키 유출 시 공격 범위를 도메인 단위로 격리.
-    roles: ["설계", "C++ 구현", "실험 평가"]
-    keywords: ["C++", "VSOMEIP", "TLS", "ECC"]
-    url: ""
-  - name: "Machine-Learning IDS for SOME/IP"
-    description: "DoS·MFA·Replay 탐지를 위한 RF 모델 (F1 ≈ 0.92)"
-    keywords: ["Python", "Scikit-learn", "Wireshark", "pandas"]
-
-skills:
-  - name: "Languages"
-    keywords: ["C/C++", "Python", "Bash"]
-  - name: "Networking & Security"
-    keywords: ["SOME/IP", "ROS1/2", "CAN", "SecOC", "MACsec"]
-  - name: "Tools"
-    keywords: ["Wireshark", "Scapy", "Git", "JIRA"]
-
-awards:
-  - title: "삼성청년 SW 아카데미 AIoT 우수상"
-    date: "2020-12"
-  - title: "IEICE Transactions 논문 게재 (1st Author)"
-    date: "2022-11"
-
-publications:
-  - title: "SOME/IP Intrusion Detection System Using Machine Learning"
-    conference: "IEICE Transactions on Information & Systems"
-    date: "2022-11"
-  - title: "ROS 침입 탐지 시스템에 대한 연구 동향 분석"
-    conference: "한국정보보호학회"
-    date: "2023-12"
+  title: Key Projects
+  intro: >
+    Selected research & engineering projects.
+  assignments:
+  - title: Domain-based Secure SOME/IP
+    tagline: "Multi-key handshake + multicast filtering with 25-line vsomeip patch"
+    link: /publications/ms_thesis
+  - title: SOME/IP IDS using Machine Learning
+    tagline: "DoS / MFA / Replay detection - 92 % F1, IEICE 2022"
+  - title: ROS Attack Dataset (ROSIDS23-Plus)
+    tagline: "4 attack scenarios, 84-feature CSV; released under CC-BY-4.0"
+  - title: LKAS Adversarial Attack Transferability
+    tagline: "Openpilot → generic LKAS, 0.9 s lane-departure success"
+  - title: UR-MQTT Secure Broker
+    tagline: "ACL + payload filtering for IoT devices, SSAFY 2023"
 
 certifications:
-  - title: "특허 10-2022-0156117: SOME/IP 공격 탐지 시스템"
-  - title: "특허 10-2023-0177577: MQTT 보안 메시징"
+  title: Patents & Certifications
+  list:
+  - name: SOME/IP Intrusion Detection System (KR 10-2022-0156117)
+    start: 2022
+    organization: KIPO
+    details: |
+      Machine-learning IDS utilising header timing features.
+  - name: Domain-key Secure SOME/IP Messaging (KR 10-2023-0177577)
+    start: 2023
+    organization: KIPO
+    details: |
+      Protocol & implementation for domain-scoped symmetric keys.
+  - name: Secure MQTT Messaging for IoT (KR 10-2023-0175884)
+    start: 2023
+    organization: KIPO
+  # 추가 특허는 동일 포맷으로 이어서…
 
-interests:
-  - "자율주행 보안"
-  - "Post-Quantum Cryptography"
+publications:
+  title: Publications
+  papers:
+  - title: SOME/IP 보안 동향 분석
+    authors: M. Kang, **J. Heo** et al.
+    conference: KISA Summer Conf. 2021
+  - title: Timestamp-based IDS for SOME/IP
+    authors: **J. Heo**, H. Kim, H. J. Jo
+    conference: KISA Winter Conf. 2021
+  - title: SOME/IP IDS Using Machine Learning
+    authors: **J. Heo**, H. Kim, H. J. Jo
+    conference: IEICE Trans. Inf & Syst. 2022
+  - title: Camera-sensor LKAS Attack Survey
+    authors: M. Kang, **J. Heo** et al.
+    conference: KISA Summer Conf. 2022
+  - title: Domain-based Secure SOME/IP Protocol
+    authors: **J. Heo**
+    conference: M.S. thesis, Soongsil Univ., 2023
+  - title: A Domain-key Based Secure SOME/IP Protocol
+    authors: **J. Heo**, H. Kim, H. J. Jo
+    conference: PLOS ONE (under review)
+
+skills:
+  title: Skills & Proficiency
+  toolset:
+  - name: C / C++ (Embedded)
+    level: 90%
+  - name: Python & Scapy
+    level: 90%
+  - name: ROS 1/2 · vsomeip
+    level: 85%
+  - name: Wireshark & CANalyst
+    level: 85%
+  - name: Machine Learning (Sklearn / Keras)
+    level: 75%
+  - name: Git / GitHub Actions / Docker
+    level: 75%
+
+footer: >
+  © 2025 Jaewoong Heo — Theme by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
