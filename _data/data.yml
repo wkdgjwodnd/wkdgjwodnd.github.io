@@ -14,8 +14,8 @@ sidebar:
 
   # ── Contacts / Links ──────────────────────────────────────
   email: wkdgjwodnd26@gmail.com
-  phone: "+82 10-6889-3918"
-  website: https://tinyurl.com/jaewoong-portfolio   # Notion 포트폴리오
+  phone: 
+  website:   # Notion 포트폴리오
   github: jaewoongheo
   linkedin: jaewoong-heo
   timezone: Asia/Seoul
@@ -35,9 +35,7 @@ sidebar:
   interests:
     title: Interests
     info:
-    - item: Embedded C++
-    - item: Rock Climbing
-    - item: Synth Music
+    - item: Embedded C++ Python
 
 # ════════════════════════════════════════════════════════════
 career-profile:
