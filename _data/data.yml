@@ -1,286 +1,207 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
+# ---------------------------------
+# 기본 사이드바
+# ---------------------------------
 sidebar:
-  position: right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  position: right
+  about: true
+  education: true
 
-  # Profile information
-  name: Alan Doe
-  tagline: Full Stack Developer
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  # 프로필
+  name: 허재웅
+  tagline: Vehicle & Embedded Cyber-Security Researcher
+  avatar: profile.png   # /assets/images/ 에 100×100 이미지 넣고 파일명 지정
 
-  # Sidebar links
-  email: example@email.com
-  phone: 012 345 6789
-  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
-  citizenship:
-  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
-  linkedin: alandoe
-  xing: alandoe
-  github: jekyll
-  telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  # 연락처
+  email: wkdgjwodnd26@gmail.com
+  phone: "010-6889-3918"
+  timezone: Asia/Seoul
+  citizenship: Republic of Korea
+  website:       # 필요하면 전체 URL 입력
+  linkedin:
+  github:
+  telegram:
+  pdf:
 
+  # 언어
   languages:
     title: Languages
     info:
-    - idiom: English
-      level: Native
+      - idiom: Korean
+        level: Native
+      - idiom: English
+        level: Intermediate (TOEIC 820)
 
-    - idiom: French
-      level: Professional
-
-    - idiom: Spanish
-      level: Professional
-
+  # 관심사
   interests:
     title: Interests
     info:
-    - item: Climbing
-      link:
+      - item: Security CTF / Hacking
+      - item: Badminton
+      - item: Cooking Experimental Dishes
 
-
-    - item: Snowboarding
-      link:
-
-
-    - item: Cooking
-      link:
-
-
+# ---------------------------------
+# 커리어 프로필 요약
+# ---------------------------------
 career-profile:
   title: Career Profile
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    차량 내부 네트워크(Automotive Ethernet, CAN) 및 임베디드 시스템 보안을
+    집중 연구해 온 보안 연구원입니다. SOME/IP 인증·암호화 프로토콜 개선,
+    머신러닝 기반 IDS, ROS 공격 데이터셋 구축 등 산학 과제를 수행하며
+    연구·개발·특허·학회 발표를 경험했습니다. 실차 환경 반영을 위해
+    C/C++·Python·Linux 임베디드 개발과 네트워크 패킷·프로토콜 분석
+    역량을 꾸준히 키우고 있습니다. 산업계에서는 ISO 21434·CSMS 준수를
+    목표로, 안전하고 생산 적용 가능한 차량-보안 솔루션을 설계·구현하는
+    것이 장기 커리어 비전입니다.
+
+# ---------------------------------
+# 학력
+# ---------------------------------
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
-    details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
-        - Bullet point
-        - Bullet point
+    - degree: M.S. in Software (Vehicle Cyber-Security)
+      university: Soongsil University, Seoul
+      time: 2022 – 2024 (예정)
+      details: |
+        • 석사 논문: “Domain Key-based Secure SOME/IP Protocol”  
+        • 주요 과목: Network Security Project, CPS Security, Advanced Crypto  
+        • 연구실: 자동차·자율주행 보안 연구실 (지도교수 조효진)
 
+    - degree: B.S. in Computer Science
+      university: Soongsil University
+      time: 2018 – 2022
+      details: |
+        • 캡스톤: CAN 버스 IDS 프로토타입 개발  
+        • 네트워크보안·시스템보안·IoT 보안 집중 이수
+
+# ---------------------------------
+# 경력 / 프로젝트 경험
+# ---------------------------------
 experiences:
   title: Experiences
   info:
-  - role: Lead Developer
-    time: 2015 - Present
-    company: Startup Hubs, San Francisco
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: UI Developer
-    time: 2012 - 2014
-    company: Amazon, London
-    details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
+    - role: Research Assistant (Graduate)
+      time: 2021.03 – 2024.02
+      company: Soongsil Univ. Autonomous Vehicle Security Lab
+      details: |
+        • 도메인-기반 SOME/IP 인증·암호화 프로토콜 설계·PoC  
+        • 머신러닝 기반 SOME/IP IDS 데이터셋 생성 및 모델(F1 0.92)  
+        • ROS UGV 공격 시나리오·네트워크 트래픽 수집 → 공개 데이터셋  
+        • 특허 6건·국내 학회 7편·IEICE 국제 저널 1편 주·공저
+        
+    - role: SSAFY 8기 AIoT Track
+      time: 2024.03 – 2024.08
+      company: Samsung SW Academy for Youth
+      details: |
+        • 백엔드 C++/Python, CI/CD, Docker, AWS 기반 서비스 개발  
+        • 공통 프로젝트 우수상(6인 팀) – 실시간 IoT 장치 보안 모니터링 플랫폼
 
+    - role: Intern Researcher
+      time: 2020.12 – 2021.02
+      company: KISA IoT Security R&D 프로그램
+      details: |
+        • MQTT 접근제어·필터링 ‘UR-MQTT’ 프로토타입 구현  
+        • 테스트베드·시연 영상 제작, 기술 보고서 작성
+
+# ---------------------------------
+# 자격·수료
+# ---------------------------------
 certifications:
   title: Certifications
   list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
-    details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
+    - name: CVE Research & Exploit Writing
+      start: 2023
+      end:
+      organization: BoB (Next-Generation Security Leader)
+      credentialid: 
+      credentialurl:
+      credentialname:
+      details: |
+        BoB 11기 트랙A – 차량보안 심화 교육·미니 프로젝트 수행
 
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
+# ---------------------------------
+# 주요 연구·사이드 프로젝트
+# ---------------------------------
 projects:
   title: Projects
   intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    연구 과제·사이드 프로젝트 중 핵심만 정리했습니다.
   assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
+    - title: Domain Key-based Secure SOME/IP
+      link: "https://doi.org/xxxx"   # 논문 DOI 또는 깃허브
+      tagline: "단일 세션키 한계를 보완한 도메인별 대칭키 교환·멀티캐스트 필터링"
 
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
+    - title: SOME/IP IDS Dataset & ML Engine
+      link:
+      tagline: "DoS·MFA·Replay 공격 트래픽 수집, Random-Forest 탐지 모델 F1 0.92"
 
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+    - title: ROSIDS23-Plus Dataset
+      link:
+      tagline: "ROS UGV 4종 신규 공격 포함 공개 데이터셋 구축"
 
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
+# ---------------------------------
+# 공개 SW 기여 (예시)
+# ---------------------------------
 oss:
   title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
   contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+    - title: vsomeip patch #123
+      link: "https://github.com/GENIVI/vsomeip/pull/123"
+      tagline: "Multicast client-ID filter 기능 버그 수정 PR"
 
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
+# ---------------------------------
+# 학술 발표 / 논문
+# ---------------------------------
 publications:
   title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
   papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
+    - title: SOME/IP Intrusion Detection System Using Machine Learning
+      link: "https://ieeexplore.ieee.org/document/xxxxx"
+      authors: Jae-Woong Heo, Hyunghoon Kim, Hyo Jin Jo
+      conference: IEICE Transactions on Information & Systems, Vol.E105-D No.11 (2022)
 
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+    - title: 도메인 기반의 SOME/IP 통신 보안 기술
+      link:
+      authors: 허재웅
+      conference: M.S. Thesis, Soongsil University (2023)
 
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
-
+# ---------------------------------
+# 추천인
+# ---------------------------------
 recommendations:
   title: Recommendations
   list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
+    - person: 조효진 교수
+      email: hyojin.jo@ssu.ac.kr
+      phone:
+      role: Advisor, Soongsil Univ.
+      recommendation: |
+        “허재웅 연구원은 복잡한 차량 네트워크 프로토콜을 빠르게 분석하고
+        실험 환경으로 옮겨 구현·검증하는 능력이 뛰어나며, 팀워크와 책임감이
+        우수합니다.”
 
-      He is a great employee!
-
+# ---------------------------------
+# 기술 스택
+# ---------------------------------
 skills:
-  title: Skills &amp; Proficiency
-
+  title: Skills & Proficiency
   toolset:
-  - name: Python & Django
-    level: 98%
+    - name: C/C++ (Embedded & Networking)
+      level: 95%
+    - name: Python (Scapy · ML Pipeline)
+      level: 90%
+    - name: SOME/IP · CAN · ROS
+      level: 90%
+    - name: Linux Kernel & Socket
+      level: 85%
+    - name: Machine/Deep Learning (Sklearn, PyTorch)
+      level: 75%
+    - name: Git · CI/CD · Docker
+      level: 75%
 
-  - name: Javascript & jQuery
-    level: 98%
-
-  - name: Angular
-    level: 98%
-
-  - name: HTML5 & CSS
-    level: 95%
-
-  - name: Ruby on Rails
-    level: 85%
-
-  - name: Sketch & Photoshop
-    level: 60%
-
+# ---------------------------------
+# 푸터
+# ---------------------------------
 footer: >
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  © 2024 Jae-Woong Heo — Design adapted from Xiaoying Riley’s open-source template.
