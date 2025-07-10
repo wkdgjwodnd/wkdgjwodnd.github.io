@@ -1,168 +1,286 @@
 #
-# =====  PERSONALISE ME!  ===============================================
+# Be aware that even a small syntax error here can lead to failures in output.
 #
 
 sidebar:
-  position: right
-  about:   true        # “How to use?” 박스 노출 여부
-  education: true      # 학력은 사이드바로
+  position: right # position of the sidebar : left or right
+  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+  education: True # set to False if you want education in main section instead of in sidebar
 
-  # -- Profile -----------------------------------------------------------
-  name: 허재웅 (Heo Jaewoong)
-  tagline: Vehicle Cyber-Security Researcher & Engineer
-  avatar: jaewoong.jpg       # 100×100 이미지  ➜ assets/images/
+  # Profile information
+  name: Alan Doe
+  tagline: Full Stack Developer
+  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
-  # -- Contact -----------------------------------------------------------
-  email: wkdgjwodnd26@gmail.com
-  phone: "010-6889-3918"
-  timezone: Asia/Seoul
-  citizenship: Republic of Korea
-  website: https://wkdgjwodnd.github.io
-  linkedin: jaewoong-heo
-  github: wkdgjwodnd
-  telegram:
-  twitter:
-  bluesky:
-  mastodon:
-  pdf: /assets/Jaewoong_Heo_CV.pdf   # 필요 시
+  # Sidebar links
+  email: example@email.com
+  phone: 012 345 6789
+  timezone: America/Cancun # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  citizenship:
+  website: https://example.com/ # Include the full website URL, including "http://" or "https://".
+  linkedin: alandoe
+  xing: alandoe
+  github: jekyll
+  telegram: # add your nickname without '@' sign
+  gitlab:
+  bitbucket:
+  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
+  twitter: '@jekyllrb'
+  stack-overflow: # Number/Username, e.g. 123456/alandoe
+  codewars:
+  goodreads: # Number-Username, e.g. 123456-alandoe
+  mastodon: # Please include your full Mastodon link here.
+  hackerrank: # Please provide your HackerRank username.
+  leetcode: # Please provide your LeetCode username.
+  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
-  # -- Languages ---------------------------------------------------------
   languages:
     title: Languages
     info:
-    - idiom: Korean
-      level: Native
     - idiom: English
-      level: Professional Working
+      level: Native
 
-  # -- Interests ---------------------------------------------------------
+    - idiom: French
+      level: Professional
+
+    - idiom: Spanish
+      level: Professional
+
   interests:
     title: Interests
     info:
-    - item: Automotive Security
-    - item: CTF & Reverse Engineering
-    - item: Hiking / Badminton
+    - item: Climbing
+      link:
 
-# =======================================================================
+
+    - item: Snowboarding
+      link:
+
+
+    - item: Cooking
+      link:
+
 
 career-profile:
   title: Career Profile
   summary: |
-    M.S-level researcher specialised in **in-vehicle network security**.
-    Designed a domain-key–based secure **SOME/IP** protocol, built ML-based
-    IDS for Automotive Ethernet & ROS, and filed 7 security-related patents.
-    Comfortable with C/C++, Python, ROS 2, vsomeip, Wireshark & Scapy.
-    Passionate about turning research outcomes into production-grade secure
-    mobility solutions.
-
+    Summarise your career here lorem ipsum dolor sit amet, consectetuer
+    adipiscing elit. You can [download this free resume/CV template here]().
+    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
+    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+    Donec quam felis, ultricies nec, pellentesque eu.
+    Second paragraph if required.
 education:
   title: Education
   info:
-  - degree: M.S. in Software (Vehicle Security)
-    university: Soongsil University, Seoul
-    time: 2021 – 2023
+  - degree: MSc in Computer Science
+    university: University of London
+    time: 2011 - 2012
     details: |
-      Thesis ― **“Domain-based Secure SOME/IP Protocol”**  
-      ▹ GPA 4.12/4.5 ▹ Full research scholarship  
-      ▹ Coursework: Network-Security Project, Cyber-Physical-System Security
-  - degree: B.S. in Software
-    university: Soongsil University, Seoul
-    time: 2017 – 2021
+      Describe your study here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+      sociis natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+      pretium quis, sem.
+        - Bullet point
+        - Bullet point
+  - degree: BSc in Applied Mathematics
+    university: Bristol University
+    time: 2007 - 2011
     details: |
-      ▹ Senior capstone: SOME/IP anomaly detection PoC  
-      ▹ Samsung Software Members (top 5 %)
+      Describe your study here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+      sociis natoque penatibus et magnis dis parturient montes, nascetur
+      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+      pretium quis, sem.
+        - Bullet point
+        - Bullet point
 
 experiences:
-  title: Experience
+  title: Experiences
   info:
-  - role: Graduate Research Assistant
-    company: Software & Vehicle Security Lab, Soongsil Univ.
-    time: 2021.03 – 2024.02
+  - role: Lead Developer
+    time: 2015 - Present
+    company: Startup Hubs, San Francisco
     details: |
-      * Designed **domain-key SOME/IP** protocol → 30 % latency overhead, 1-domain attack containment  
-      * Implemented **ML-based IDS** (Random Forest, SVM) for SOME/IP (92 % F1) & ROS (86 % F1)  
-      * Built **ROSIDS23-Plus** dataset (4 attack classes + 6 GB pcap)  
-      * Co-advised 3 undergraduate teams; won **Samsung SSAFY AIoT 우수상**
-
-  - role: Back-end / Security Intern
-    company: Samsung Youth SW Academy (SSAFY)
-    time: 2023.03 – 2023.08
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
+      error sit voluptatem accusantium doloremque laudantium, totam rem
+      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+      architecto beatae vitae dicta sunt explicabo.
+        - Bullet point
+        - Bullet point
+  - role: Senior Software Engineer
+    time: 2014 - 2015
+    company: Google, London
     details: |
-      * Led 6-person AIoT project; delivered secure MQTT over TLS + ACL  
-      * CI/CD · Docker · AWS EC2 구축, 코드 리뷰 & 정적 분석 자동화
-
-projects:
-  title: Key Projects
-  intro: >
-    Selected research & engineering projects.
-  assignments:
-  - title: Domain-based Secure SOME/IP
-    tagline: "Multi-key handshake + multicast filtering with 25-line vsomeip patch"
-    link: /publications/ms_thesis
-  - title: SOME/IP IDS using Machine Learning
-    tagline: "DoS / MFA / Replay detection - 92 % F1, IEICE 2022"
-  - title: ROS Attack Dataset (ROSIDS23-Plus)
-    tagline: "4 attack scenarios, 84-feature CSV; released under CC-BY-4.0"
-  - title: LKAS Adversarial Attack Transferability
-    tagline: "Openpilot → generic LKAS, 0.9 s lane-departure success"
-  - title: UR-MQTT Secure Broker
-    tagline: "ACL + payload filtering for IoT devices, SSAFY 2023"
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem.
+        - Bullet point
+        - Bullet point
+  - role: UI Developer
+    time: 2012 - 2014
+    company: Amazon, London
+    details: |
+      Describe your role here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+      Cum sociis natoque penatibus et magnis dis parturient montes,
+      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+      pellentesque eu, pretium quis, sem.
+        - Bullet point
+        - Bullet point
 
 certifications:
-  title: Patents & Certifications
+  title: Certifications
   list:
-  - name: SOME/IP Intrusion Detection System (KR 10-2022-0156117)
-    start: 2022
-    organization: KIPO
+  - name: CV Builder
+    start: 2020
+    end: 2021
+    organization: Microsoft
+    credentialid: 111-222
+    credentialurl: www.google.com
+    credentialname: Google
     details: |
-      Machine-learning IDS utilising header timing features.
-  - name: Domain-key Secure SOME/IP Messaging (KR 10-2023-0177577)
-    start: 2023
-    organization: KIPO
+      Details about cert. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit.
+      Nullam eget orci purus. Nullam ultrices neque nibh.
+      Aenean fermentum, felis vulputate suscipit accumsan,
+      sem enim bibendum augue, sed convallis arcu lacus at dui.
+      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      Praesent venenatis erat non augue suscipit consectetur.
+
+      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+      fringilla vel. Ut euismod, sem sed vulputate venenatis,
+      justo diam viverra velit, sed rhoncus leo leo eu justo.
+      Suspendisse placerat risus ante, sed porta nisi blandit at.
+  - name: Git learning
+    start: 2019
+    end:
+    organization: Microsoft
+    credentialid: 111-222
+    credentialurl: www.github.com
+    credentialname: Github
     details: |
-      Protocol & implementation for domain-scoped symmetric keys.
-  - name: Secure MQTT Messaging for IoT (KR 10-2023-0175884)
-    start: 2023
-    organization: KIPO
-  # 추가 특허는 동일 포맷으로 이어서…
+      Older certification. Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit.
+      Nullam eget orci purus. Nullam ultrices neque nibh.
+      Aenean fermentum, felis vulputate suscipit accumsan,
+      sem enim bibendum augue, sed convallis arcu lacus at dui.
+      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      Praesent venenatis erat non augue suscipit consectetur.
+
+projects:
+  title: Projects
+  intro: >
+    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  assignments:
+  - title: Velocity
+    link: "#hook"
+    tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+  - title: DevStudio
+    link: "#"
+    tagline: "A responsive website template designed to help web developers/designers market their services."
+
+  - title: Tempo
+    link: "#"
+    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  - title: Atom
+    link: "#"
+    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  - title: Delta
+    link: "#"
+    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+
+oss:
+  title: OSS Contributions
+  intro: >
+    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+  contributions:
+  - title: Tempo
+    link: "#"
+    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+  - title: Atom
+    link: "#"
+    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
+
+  - title: Delta
+    link: "#"
+    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
 
 publications:
   title: Publications
+  intro: |
+    You can list your publications in this section. Lorem ipsum dolor sit
+    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+    bibendum fringilla a eu lectus.
   papers:
-  - title: SOME/IP 보안 동향 분석
-    authors: M. Kang, **J. Heo** et al.
-    conference: KISA Summer Conf. 2021
-  - title: Timestamp-based IDS for SOME/IP
-    authors: **J. Heo**, H. Kim, H. J. Jo
-    conference: KISA Winter Conf. 2021
-  - title: SOME/IP IDS Using Machine Learning
-    authors: **J. Heo**, H. Kim, H. J. Jo
-    conference: IEICE Trans. Inf & Syst. 2022
-  - title: Camera-sensor LKAS Attack Survey
-    authors: M. Kang, **J. Heo** et al.
-    conference: KISA Summer Conf. 2022
-  - title: Domain-based Secure SOME/IP Protocol
-    authors: **J. Heo**
-    conference: M.S. thesis, Soongsil Univ., 2023
-  - title: A Domain-key Based Secure SOME/IP Protocol
-    authors: **J. Heo**, H. Kim, H. J. Jo
-    conference: PLOS ONE (under review)
+  - title: The Art of Computer Programming
+    link: "#"
+    authors: Donald E. Knuth
+    conference: Addison-Wesley, 1968
+
+  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
+    link: "#"
+    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
+    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
+
+  - title: A syntax directed compiler for Algol 60
+    link: "#"
+    authors: Edgar T. Irons
+    conference: "Comm. ACM 4 (1961), 51–55"
+
+recommendations:
+  title: Recommendations
+  list:
+  - person: Yareli Perez
+    email: perezyareli@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      Alan Doe is a super employee!
+  - person: Lara Henderson
+    email: larah@example.com
+    phone: 012 345 6789
+    role: General Director at example.com
+    recommendation: |
+      I would like to work with Alan Doe again!
+
+      He is a great employee!
 
 skills:
-  title: Skills & Proficiency
+  title: Skills &amp; Proficiency
+
   toolset:
-  - name: C / C++ (Embedded)
-    level: 90%
-  - name: Python & Scapy
-    level: 90%
-  - name: ROS 1/2 · vsomeip
+  - name: Python & Django
+    level: 98%
+
+  - name: Javascript & jQuery
+    level: 98%
+
+  - name: Angular
+    level: 98%
+
+  - name: HTML5 & CSS
+    level: 95%
+
+  - name: Ruby on Rails
     level: 85%
-  - name: Wireshark & CANalyst
-    level: 85%
-  - name: Machine Learning (Sklearn / Keras)
-    level: 75%
-  - name: Git / GitHub Actions / Docker
-    level: 75%
+
+  - name: Sketch & Photoshop
+    level: 60%
 
 footer: >
-  © 2025 Jaewoong Heo — Theme by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
