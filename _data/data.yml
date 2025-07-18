@@ -8,28 +8,14 @@ sidebar:
   education: true
 
   # ── Profile ───────────────────────────────────────────────
-  name: 허 재 웅  (Jae-Woong Heo)
+  name: 허 재 웅  (Jaewoong Heo)
   tagline: Automotive Cyber-Security Engineer
   avatar: profile.png            # 100×100 이미지(assets/images)
 
   # ── Contacts / Links ──────────────────────────────────────
   email: wkdgjwodnd26@gmail.com
   phone: 
-  website:   # Notion 포트폴리오
-  github: jaewoongheo
-  linkedin: jaewoong-heo
-  timezone: Asia/Seoul
-  citizenship: Republic&nbsp;of&nbsp;Korea
-  pdf:                                             # 필요 시 PDF 링크
-
-  # ── Languages ─────────────────────────────────────────────
-  languages:
-    title: Languages
-    info:
-    - idiom: Korean
-      level: Native
-    - idiom: English
-      level: B2 (TOEIC 820)
+  github: wkdgjwodnd
 
   # ── Interests ─────────────────────────────────────────────
   interests:
@@ -38,128 +24,112 @@ sidebar:
     - item: Embedded C++ Python
 
 # ════════════════════════════════════════════════════════════
-career-profile:
-  title: Career Profile
-  summary: |
-    Automotive Ethernet·ROS 보안 연구 3 년차 보안 엔지니어입니다.
-    – 도메인 대칭키 기반 **SOME/IP 인증 프로토콜**을 설계·C++로 구현해
-      도메인 격리 및 세션 키 유출 위험 ↓50 % 를 달성했습니다.
-    – DoS/MFA/Replay 시나리오 기반 **IDS 데이터셋 3 GB** 구축,
-      Random Forest 탐지 모델 F1 0.94 달성(IEICE ‘22).
-    – ROS UGV, MQTT, LKAS 공격·방어 연구와 특허 3건 보유.
-    임베디드 C/C++, Python, Linux 네트워킹 스택과 암호·PKI에 익숙하며
-    차량 HSM·SecOC·MACsec 통합 플랫폼 구축을 목표로 합니다.
-
-# ════════════════════════════════════════════════════════════
 education:
   title: Education
   info:
-  - degree: M.Sc. in Software (Automotive Security)
-    university: Soongsil University, Korea
+  - degree: 소프트웨어학 석사
+    university: 숭실대학교
     time: 2021 – 2023
     details: |
       • 석사학위논문: **도메인 기반 SOME/IP 통신 보안 기술**
-        – Domain Key & PKI 설계, 세션 오버헤드 10 µs ↓.
-  - degree: B.Sc. in Computer Engineering
-    university: Hallym University
-    time: 2015 – 2021
-    details: |
-      • 네트워크보안 프로젝트(학부 캡스톤) A+
 
-# ════════════════════════════════════════════════════════════
-experiences:
-  title: Experiences
-  info:
-  - role: Research Engineer (주연구자)
-    time: 2021.03 – 2024.02
-    company: NRF Project “Next-Gen In/Out-Vehicle Security”
-    details: |
-      • 도메인 대칭키 기반 SOME/IP C++ 프로토콜 구현  
-        – Client ID → Domain ID 재정의, Multicast 선택수신 구현  
-      • 세션 설립 오버헤드 +10 µs, 공격 범위 도메인 격리 실증
-      • C++, STL, Linux, Wireshark, TLS/PKI
-  - role: ML Engineer / Data Lead
-    time: 2021.01 – 2022.12
-    company: IITP “AI-based Automotive IDS”
-    details: |
-      • DoS, MFA, Replay 공격 시나리오 설계, 1 M packets 수집  
-      • Random Forest IDS F1 0.94 → IEICE 논문 게재
-  - role: Security Researcher
-    time: 2022.11 – 2024.10
-    company: ADD “UGV ROS Traffic & IDS”
-    details: |
-      • Fake-Node·Packet Injection 등 4 종 ROS 공격, ROSIDS23 확장
-  - role: Vulnerability Researcher
-    time: 2022.03 – 2022.11
-    company: Crypto Research Society
-    details: |
-      • OpenPilot LKAS Dirty Road Patch 공격 전이성 97 % 확인
+  - degree: 컴퓨터공학과 학사
+    university: 한림대학교
+    time: 2015 – 2021
 
 # ════════════════════════════════════════════════════════════
 certifications:
   title: Patents
   list:
-  - name: SOME/IP 통신 공격 탐지 시스템·방법
-    start: 2022
-    end:
-    organization: KIPO
-    credentialid: 10-2022-0156117
-    details: |
-      SOME/IP 패킷 Feature 기반 IDS 특허
-  - name: MQTT 메시지 송수신 보안 방법
-    start: 2023
-    organization: KIPO
-    credentialid: 10-2023-0177577
-  - name: 자율주행 차량 사고 분석 장치
-    start: 2023
-    organization: KIPO
+  - name: Attack detection system and attack detection method based on SOME/IP communication protocol, and computer program stored in a recording medium to execute the method thereof
+    registration_year: 2025
+    credentialid: 10-2758-0330000
+    inventors: Hyo Jin Jo, Hyunghoon Kim, Jaewoong Heo
+
+  - name: Accident analysis method for autonomous vehicles, recording media and accident analysis device for performing the same
+    application_year: 2023
     credentialid: 10-2023-0175884
+    inventors: Hyo Jin Jo, Hyunghoon Kim, Jaewoong Heo
+
+  - name: Method and recording medium for estimating transmission error counter of electronic control unit and transmission error counter emulation module performing that same
+    application_year: 2023
+    credentialid: 10-2023-0157552
+    inventors: Hyo Jin Jo, Minjeong Kang, Yeongjae Seo, Hyunghoon Kim, Jaewoong Heo, Jiwoo Shin
+
+  - name: Method for transmitting and receiving messages based on MQTT protocol, device and recording medium thereof
+    application_year: 2023
+    credentialid: 10-2023-0177577
+    inventors: Hyo Jin Jo, Sungjun Park, Juwon Oh, Deunsol Lee, Jaewoong Heo
+
+  - name: Method, system and recording medium for transmitting and receiving message based on scalable service-oriented middleware over internet protocol
+    application_year: 2023
+    credentialid: 10-2023-0154504
+    inventors: Hyo Jin Jo, Hyunghoon Kim, Jaewoong Heo
 
 projects:
   title: Projects
-  intro: >
-    주요 연구·개발 프로젝트입니다.
+
   assignments:
-  - title: Domain-Key Secure SOME/IP
-    link: "#"
-    tagline: "멀티도메인 대칭키 + PKI 기반 인증 프로토콜 (C++)."
-  - title: SOME/IP IDS Dataset
-    link: "#"
-    tagline: "DoS·MFA·Replay 데이터셋 3 GB / RF 탐지모델 F1 0.94."
-  - title: ROS UGV IDS Dataset
-    link: "#"
-    tagline: "ROSIDS23 확장 – Fake-Node / TCP·UDP Injection."
+    - title: AI 기술을 활용한 자율주행 자동차 사이버 공격 및 방어 기술 연구
+      organization: Institute of Information & communications Technology Planning & Evaluation (IITP)
+      period: 2021.01 – 2022.12
+      tagline: "SOME/IP 공격 데이터셋 구축 및 AI 기반 자율주행차 사이버 공격·방어 기술 연구"
+
+    - title: 자율주행자동차를 위한 Lane Keeping Assistant System (LKAS) 취약점 분석 연구
+      organization: Korea Institute of Information Security and Cryptology (KIISC)
+      period: 2022.03 – 2022.11
+      tagline: "DRP 공격 분석 및 모델스틸링 기반 DRP 공격 연구"
+
+    - title: 이동통신 네트워크에서 사기 범죄에 활용되는 악의적인 노드 탐지 기술
+      organization: The Circle Foundation
+      period: 2022.01 – 2022.12
+      tagline: "음성신호 분석 및 LTE 공격 기술 조사"
+
+    - title: 안전한 자율주행차량 환경 구축을 위한 차세대 내부/외부 네트워크 보안 기술 개발
+      organization: National Research Foundation of Korea (NRF)
+      period: 2021.03 – 2024.02
+      tagline: "SOME/IP 보안 프로토콜 설계 및 구현"
+
+    - title: 자율주행차 보안 기초연구실
+      organization: National Research Foundation of Korea (NRF)
+      period: 2021.06 – 2024.02
+      tagline: "SOME/IP IDS 설계 및 구현 (IEICE 레터 제출)"
+
+    - title: 무인지상차량(UGV) 내부네트워크 트래픽 수집 및 검증 연구
+      organization: Agency for Defense Development (ADD)
+      period: 2022.11 – 2024.10
+      tagline: "UGV 환경에서 ROS 기반 공격 시나리오 구성 및 데이터셋 제작"
 
 publications:
   title: Publications
   papers:
   - title: A Domain Key-based Secure SOME/IP Protocol
-    authors: H. J. Heo, H. H. Kim, H. J. Jo
-    conference: PLOS One (Under Review)
-  - title: SOME/IP IDS Using Machine Learning
-    authors: H. J. Heo et al.
-    conference: IEICE TRANS. INF. & SYST., 2022
-  - title: 도메인 기반 SOME/IP 통신 보안 기술
-    authors: 허재웅
-    conference: Soongsil Univ. Thesis, 2023
+    authors: Jaewoong Heo, Hyunghoon Kim, and Hyo Jin Jo.
+    conference: PLOS One 2025. (Under Review)
 
-skills:
-  title: Skills & Proficiency
-  toolset:
-  - name: C/C++ (STL, GCC)
-    level: 90%
-  - name: Python & FastAPI
-    level: 90%
-  - name: SOME/IP / SecOC / MACsec
-    level: 90%
-  - name: ROS 2 & DDS
-    level: 80%
-  - name: Wireshark / Tcpdump
-    level: 80%
-  - name: Machine Learning (scikit-learn)
-    level: 75%
-  - name: Linux & Docker
-    level: 75%
+  - title: Attack Datasets for ROS Intrusion Detection Systems
+    authors: Hyunghoon Kim, Seungmin Lee, Jaewoong Heo, and Hyo Jin Jo
+    conference: Journal of the Korea Institute of Information Security & Cryptology, 2024
+
+  - title: A survey of intrusion detection systems for ROS
+    authors: Jaewoong Heo, Hyunghoon Kim, and Hyo Jin Jo
+    conference: Conference on Information Security and Cryptography Winter (CISC-W), 2023
+
+  - title: A survey of LKAS attack with camera sensor
+    authors: Minjeong Kang, Hyunghoon Kim, Jaewoong Heo, Jiwoo Shin, Dayoung Kim, and Hyo Jin Jo
+    conference: Conference on Information Security and Cryptography Winter (CISC-S), 2022
+
+  - title: SOME/IP Intrusion Detection System Using Machine Learning
+    authors: Jaewoong Heo, Hyunghoon Kim, and Hyo Jin JO
+    conference: IEICE TRANS. INF. & SYST., 2022
+
+  - title: Timestamp-based intrusion detection system for SOME/IP
+    authors: Jaewoong Heo, Hyunghoon Kim, and Hyo Jin Jo
+    conference: Conference on Information Security and Cryptography Winter (CISC-W), 2021
+
+  - title: A survey of SOME/IP security
+    authors: Minjeong Kang, Jaewoong Heo, Hyunghoon Kim, and Hyo Jin Jo
+    conference: Conference on Information Security and Cryptography Summer (CISC-S), 2021
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by Xiaoying Riley. Modified by Jae-Woong Heo.
