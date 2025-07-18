@@ -25,4 +25,15 @@
     <i class="fa fa-user"></i> 발명자: {{ cert.inventors }}
   </span>
   <br>
-{% endif
+{% endif %}
+{% if cert.organization %}
+  <span class="cert-organization" style="color:#555;">
+    <i class="fa fa-building"></i> 기관: {{ cert.organization }}
+  </span>
+  <br>
+{% endif %}
+{% if cert.url %}
+  <a href="{{ cert.url }}" target="_blank" rel="noopener noreferrer" class="cert-link">
+    <i class="fa fa-link"></i> 자세히 보기
+  </a>
+{% endif %}
