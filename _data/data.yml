@@ -39,32 +39,27 @@ education:
 
 # ════════════════════════════════════════════════════════════
 certifications:
-  title: Patents
+  title: 특허 및 인증
   list:
-  - name: Attack detection system and attack detection method based on SOME/IP communication protocol, and computer program stored in a recording medium to execute the method thereof
-    registration_year: 2025
-    credentialid: 10-2758-0330000
-    inventors: Hyo Jin Jo, Hyunghoon Kim, Jaewoong Heo
-
-  - name: Accident analysis method for autonomous vehicles, recording media and accident analysis device for performing the same
+  - name: 자율주행 차량의 사고 분석 방법, 이를 수행하는 기록 매체 및 사고 분석 장치
     application_year: 2023
     credentialid: 10-2023-0175884
-    inventors: Hyo Jin Jo, Hyunghoon Kim, Jaewoong Heo
+    inventors: 조효진, 김형훈, 허재웅
 
-  - name: Method and recording medium for estimating transmission error counter of electronic control unit and transmission error counter emulation module performing that same
-    application_year: 2023
-    credentialid: 10-2023-0157552
-    inventors: Hyo Jin Jo, Minjeong Kang, Yeongjae Seo, Hyunghoon Kim, Jaewoong Heo, Jiwoo Shin
-
-  - name: Method for transmitting and receiving messages based on MQTT protocol, device and recording medium thereof
+  - name: MQTT 프로토콜 기반의 메시지 송수신 방법, 장치 및 기록매체
     application_year: 2023
     credentialid: 10-2023-0177577
-    inventors: Hyo Jin Jo, Sungjun Park, Juwon Oh, Deunsol Lee, Jaewoong Heo
+    inventors: 조효진, 박성준, 오주원, 이든솔, 허재웅
 
-  - name: Method, system and recording medium for transmitting and receiving message based on scalable service-oriented middleware over internet protocol
+  - name: SOME/IP 프로토콜 기반의 메시지 송수신 방법, 시스템 및 기록매체
     application_year: 2023
     credentialid: 10-2023-0154504
-    inventors: Hyo Jin Jo, Hyunghoon Kim, Jaewoong Heo
+    inventors: 조효진, 김형훈, 허재웅
+
+  - name: CAN 프로토콜 기반의 데이터 송수신 방법, 시스템 및 기록매체
+    application_year: 2023
+    credentialid: 10-2023-0150722
+    inventors: 조효진, 이시원, 최예린, 김다영, 김형훈, 허재웅
 
 projects:
   title: Projects
