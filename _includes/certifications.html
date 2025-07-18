@@ -1,43 +1,28 @@
-{% assign certifications = site.data.data.certifications %}
-{% if certifications %}
-<section class="section certifications-section">
-  <h2 class="section-title">
-    <span class="fa-stack fa-xs">
-      <i class="fas fa-circle fa-stack-2x"></i>
-      <i class="fas fa-certificate fa-stack-1x fa-inverse"></i>
-    </span>
-    {{ certifications.title }}
-  </h2>
-  <div class="certifications-list">
-    {% for cert in certifications.list %}
-      <div class="item" style="margin-bottom:14px;">
-        <span class="cert-name" style="font-weight:bold;">
-          {{ cert.name }}
-        </span>
-        <br>
-        {% if cert.registration_year %}
-          <span class="cert-year" style="color:#888;">
-            <i class="fa fa-calendar"></i> 등록년도: {{ cert.registration_year }}
-          </span>
-        {% endif %}
-        {% if cert.application_year %}
-          <span class="cert-year" style="color:#888;">
-            <i class="fa fa-calendar"></i> 출원년도: {{ cert.application_year }}
-          </span>
-        {% endif %}
-        {% if cert.credentialid %}
-          <span class="cert-id" style="color:#888;">
-            <i class="fa fa-id-card"></i> 번호: {{ cert.credentialid }}
-          </span>
-        {% endif %}
-        {% if cert.inventors %}
-          <span class="cert-inventors" style="color:#555;">
-            <i class="fa fa-user"></i> 발명자: {{ cert.inventors }}
-          </span>
-        {% endif %}
-      </div>
-      <hr style="margin:8px 0; border-top:1px dashed #eee;">
-    {% endfor %}
-  </div>
-</section>
+<span class="cert-name" style="font-weight:bold;">
+  {{ cert.name }}
+</span>
+<br>
+{% if cert.registration_year %}
+  <span class="cert-year" style="color:#888;">
+    <i class="fa fa-calendar"></i> 등록년도: {{ cert.registration_year }}
+  </span>
+  <br>
 {% endif %}
+{% if cert.application_year %}
+  <span class="cert-year" style="color:#888;">
+    <i class="fa fa-calendar"></i> 출원년도: {{ cert.application_year }}
+  </span>
+  <br>
+{% endif %}
+{% if cert.credentialid %}
+  <span class="cert-id" style="color:#888;">
+    <i class="fa fa-id-card"></i> 번호: {{ cert.credentialid }}
+  </span>
+  <br>
+{% endif %}
+{% if cert.inventors %}
+  <span class="cert-inventors" style="color:#555;">
+    <i class="fa fa-user"></i> 발명자: {{ cert.inventors }}
+  </span>
+  <br>
+{% endif
