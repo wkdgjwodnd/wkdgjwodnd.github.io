@@ -5,7 +5,7 @@
 sidebar:
   position: left
   about: true
-  education: true
+  # education: true
 
   # ── Profile ───────────────────────────────────────────────
   name: 허 재 웅  (Jaewoong Heo)
