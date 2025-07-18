@@ -120,7 +120,7 @@ patents:
     inventors: 조효진, 이시원, 최예린, 김다영, 김형훈, 허재웅
 
 
-External_Activities: 
+external_activities: 
   - title: Samsung Software Academy for Youth (SSAFY)
     description: 
       - Completed training on web development fundamentals using HTML, CSS, and JavaScript.
@@ -140,15 +140,15 @@ External_Activities:
     duration: 2021.03 ~ 2021.05
 
 
-Awards:
+awards:
   - title: 공통 프로젝트 (AIoT 트랙) 우수상
-  - 인원: 6명
-  - 기관: 삼성청년아카데미 (SSAFY)
+  - participants: 6
+  - institution: Samsung Software Acadmy for Youth (SSAFY)
 
-Skills:
-  - Python
-  - C++
-  - C
-  - Git
-  - Docker
+skills:
+  - item: Python
+  - item: C++
+  - item: C
+  - item: Git
+  - item: Docker
 

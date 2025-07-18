@@ -1,0 +1,38 @@
+{% assign activities = site.data.data.external_activities %}
+{% if activities %}
+<section class="section external-activities-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
+    </span>
+    External Activities
+  </h2>
+  <div class="external-activities-list">
+    {% for activity in activities %}
+      <div class="item" style="margin-bottom:20px;">
+        {% if activity.title %}
+          <span class="activity-title" style="font-weight:bold; font-size: 16px;">
+            {{ activity.title }}
+          </span>
+          <br>
+        {% endif %}
+        {% if activity.duration %}
+          <span class="activity-duration" style="color:#888;">
+            <i class="fa fa-calendar"></i> {{ activity.duration }}
+          </span>
+          <br>
+        {% endif %}
+        {% if activity.description %}
+          <ul style="margin-top: 8px; padding-left: 20px;">
+            {% for line in activity.description %}
+              <li>{{ line }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      <hr style="margin:10px 0; border-top:1px dashed #eee;">
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
