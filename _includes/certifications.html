@@ -11,27 +11,27 @@
   <div class="certifications-list">
     {% for cert in certifications.list %}
       <div class="item" style="margin-bottom:14px;">
-        <span class="cert-name" style="font-size:1rem; font-weight:bold;">
+        <span class="cert-name" style="font-weight:bold;">
           {{ cert.name }}
         </span>
         <br>
         {% if cert.registration_year %}
-          <span class="cert-year" style="color:#888; font-size:0.95rem;">
+          <span class="cert-year" style="color:#888;">
             <i class="fa fa-calendar"></i> 등록년도: {{ cert.registration_year }}
           </span>
         {% endif %}
         {% if cert.application_year %}
-          <span class="cert-year" style="color:#888; font-size:0.95rem;">
+          <span class="cert-year" style="color:#888;">
             <i class="fa fa-calendar"></i> 출원년도: {{ cert.application_year }}
           </span>
         {% endif %}
         {% if cert.credentialid %}
-          <span class="cert-id" style="color:#888; font-size:0.95rem;">
+          <span class="cert-id" style="color:#888;">
             <i class="fa fa-id-card"></i> 번호: {{ cert.credentialid }}
           </span>
         {% endif %}
         {% if cert.inventors %}
-          <span class="cert-inventors" style="color:#555; font-size:0.95rem;">
+          <span class="cert-inventors" style="color:#555;">
             <i class="fa fa-user"></i> 발명자: {{ cert.inventors }}
           </span>
         {% endif %}
