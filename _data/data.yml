@@ -9,7 +9,6 @@ sidebar:
 
   # ── Profile ───────────────────────────────────────────────
   name: 허 재 웅  (Jaewoong Heo)
-  tagline: Automotive Cyber-Security Engineer
   avatar: profile.png            # 100×100 이미지(assets/images)
 
   # ── Contacts / Links ──────────────────────────────────────
@@ -22,18 +21,15 @@ interests:
     info:
     - item:  Automotive Security, Embedded security, Research,
 
-
 education:
   title: Education
   info:
-  - degree: 소프트웨어학 석사
-    university: 숭실대학교
+  - degree: Master
+    university: Soongsil University
     time: 2021 – 2023
-    details: |
-      • 석사학위논문: **도메인 기반 SOME/IP 통신 보안 기술**
 
-  - degree: 컴퓨터공학과 학사
-    university: 한림대학교
+  - degree: Bachelor
+    university: Hallym University
     time: 2015 – 2021
 
 # ════════════════════════════════════════════════════════════
@@ -69,31 +65,31 @@ publications:
   title: Publications
   papers:
   - title: A Domain Key-based Secure SOME/IP Protocol
-    authors: Jaewoong Heo, Hyunghoon Kim, and Hyo Jin Jo.
+    authors: **Jaewoong Heo**, Hyunghoon Kim, and Hyo Jin Jo.
     conference: PLOS One 2025. (Under Review)
 
   - title: Attack Datasets for ROS Intrusion Detection Systems
-    authors: Hyunghoon Kim, Seungmin Lee, Jaewoong Heo, and Hyo Jin Jo
+    authors: Hyunghoon Kim, Seungmin Lee, **Jaewoong Heo**, and Hyo Jin Jo
     conference: Journal of the Korea Institute of Information Security & Cryptology, 2024
 
   - title: A survey of intrusion detection systems for ROS
-    authors: Jaewoong Heo, Hyunghoon Kim, and Hyo Jin Jo
+    authors: **Jaewoong Heo**, Hyunghoon Kim, and Hyo Jin Jo
     conference: Conference on Information Security and Cryptography Winter (CISC-W), 2023
 
   - title: A survey of LKAS attack with camera sensor
-    authors: Minjeong Kang, Hyunghoon Kim, Jaewoong Heo, Jiwoo Shin, Dayoung Kim, and Hyo Jin Jo
+    authors: Minjeong Kang, Hyunghoon Kim, **Jaewoong Heo**, Jiwoo Shin, Dayoung Kim, and Hyo Jin Jo
     conference: Conference on Information Security and Cryptography Winter (CISC-S), 2022
 
   - title: SOME/IP Intrusion Detection System Using Machine Learning
-    authors: Jaewoong Heo, Hyunghoon Kim, and Hyo Jin JO
+    authors: **Jaewoong Heo**, Hyunghoon Kim, and Hyo Jin JO
     conference: IEICE TRANS. INF. & SYST., 2022
 
   - title: Timestamp-based intrusion detection system for SOME/IP
-    authors: Jaewoong Heo, Hyunghoon Kim, and Hyo Jin Jo
+    authors: **Jaewoong Heo**, Hyunghoon Kim, and Hyo Jin Jo
     conference: Conference on Information Security and Cryptography Winter (CISC-W), 2021
 
   - title: A survey of SOME/IP security
-    authors: Minjeong Kang, Jaewoong Heo, Hyunghoon Kim, and Hyo Jin Jo
+    authors: Minjeong Kang, **Jaewoong Heo**, Hyunghoon Kim, and Hyo Jin Jo
     conference: Conference on Information Security and Cryptography Summer (CISC-S), 2021
 
 patents:
@@ -102,41 +98,29 @@ patents:
   - name: 자율주행 차량의 사고 분석 방법, 이를 수행하는 기록 매체 및 사고 분석 장치
     application_year: 2023
     credentialid: 10-2023-0175884
-    inventors: 조효진, 김형훈, 허재웅
+    inventors: Hyo Jin Jo, Hyunghoon Kim, **Jaewoong Heo**
 
   - name: MQTT 프로토콜 기반의 메시지 송수신 방법, 장치 및 기록매체
     application_year: 2023
     credentialid: 10-2023-0177577
-    inventors: 조효진, 박성준, 오주원, 이든솔, 허재웅
+    inventors: Hyo Jin Jo, Sungjun Park, Juwon Oh, Deunsol Lee, **Jaewoong Heo**
 
   - name: SOME/IP 프로토콜 기반의 메시지 송수신 방법, 시스템 및 기록매체
     application_year: 2023
     credentialid: 10-2023-0154504
-    inventors: 조효진, 김형훈, 허재웅
+    inventors: Hyo Jin Jo, Hyunghoon Kim, **Jaewoong Heo**
 
   - name: CAN 프로토콜 기반의 데이터 송수신 방법, 시스템 및 기록매체
     application_year: 2023
     credentialid: 10-2023-0150722
-    inventors: 조효진, 이시원, 최예린, 김다영, 김형훈, 허재웅
+    inventors: Hyo Jin Jo, Siwon Lee, Yerin Choi, Dayoung Kim, Hyunghoon Kim, **Jaewoong Heo**
 
 
 external_activities: 
   - title: Samsung Software Academy for Youth (SSAFY)
-    description: 
-      - Completed training on web development fundamentals using HTML, CSS, and JavaScript.
-      - Practiced integrating Vue.js with Django REST API, including Axios, Router, and SPA development.
-      - Implemented backend API calls and database manipulation using SQL and Django ORM.
-      - Gained proficiency in Modern C++ with object-oriented design and practical exercises.
-      - Enhanced problem-solving skills through algorithms like Backtracking, DFS/BFS, and Dijkstra.
-      - Configured Linux environments on Raspberry Pi and practiced Shell commands.
-      - Understood robot control systems and message communication using ROS.
     duration: 2024.07 - 2025.06
 
   - title: K-Shield Jr. (6th Cohort)
-  - description:
-      - 정보보호 관리진단 과정 이수 (총 200시간 교육)
-      - 보안 이론 및 실습을 포함한 교육 과정 수료
-      - 기업 선정, 체크리스트 작성, 위협 평가, 자산/취약점 평가, 위험도 도출, 대응 방안 수립
     duration: 2021.03 ~ 2021.05
 
 
