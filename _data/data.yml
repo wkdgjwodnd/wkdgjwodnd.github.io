@@ -128,8 +128,8 @@ external_activities:
 
 awards:
   - title: 공통 프로젝트 (AIoT 트랙) 우수상
-  - participants: 6
-  - institution: Samsung Software Acadmy for Youth (SSAFY)
+    participants: 6
+    institution: Samsung Software Acadmy for Youth (SSAFY)
 
 skills:
   - item: Python
