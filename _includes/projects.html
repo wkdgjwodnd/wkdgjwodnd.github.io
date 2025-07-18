@@ -1,21 +1,43 @@
-{% if site.data.data.projects.assignments %}
-  <section class="section projects-section">
-    <h2 class="section-title"><i class="fa fa-archive"></i>{{ site.data.data.projects.title }}</h2>
-    <div class="projects-list">
-      {% for project in site.data.data.projects.assignments %}
-        <div class="item">
-          <span class="project-title"><strong>{{ project.title }}</strong></span>
-          <br>
-          <span class="project-organization" style="color:#555;">
-            <i class="fa fa-university"></i> {{ project.organization }}
-          </span>
-          <span class="project-period" style="float:right; color:#888;">
-            <i class="fa fa-calendar"></i> {{ project.period }}
-          </span>
-          <p class="project-tagline" style="margin-top:5px;">{{ project.tagline }}</p>
-        </div>
-        <hr style="margin:10px 0; border-top:1px dashed #eee;">
-      {% endfor %}
-    </div>
-  </section>
+{% assign projects = site.data.data.projects %}
+{% if projects %}
+<section class="section projects-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ projects.title }}
+  </h2>
+
+  {% if projects.intro %}
+  <div class="intro">
+      <p>{{ projects.intro }}</p>
+  </div><!--//intro-->
+  {% endif %}
+
+  {% for project in projects.assignments %}
+    <div class="item" style="margin-bottom:18px;">
+      <span class="project-title" style="font-weight:bold;">
+        {% if project.link %}
+        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+        {% else %}
+        {{ project.title }}
+        {% endif %}
+      </span>
+      <br>
+      <span class="project-organization" style="color:#555;">
+        <i class="fa fa-university"></i> {{ project.organization }}
+      </span>
+      {% if project.tagline %}
+      <p class="project-tagline" style="margin-top:5px;">{{ project.tagline }}</p>
+      {% endif %}
+      <span class="project-period" style="color:#888;">
+        <i class="fa fa-calendar"></i> {{ project.period }}
+      </span>
+      <hr style="margin:10px 0; border-top:1px dashed #eee;">
+    </div><!--//item-->
+  {% endfor %}
+
+</section><!--//section-->
 {% endif %}
