@@ -1,0 +1,47 @@
+{% assign patents = site.data.data.patents %}
+{% if patents %}
+<section class="section patents-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+    </span>
+    Patents
+  </h2>
+  <div class="patents-list">
+    {% for patent in patents.list %}
+      <div class="item" style="margin-bottom:18px;">
+        <span class="patent-name" style="font-weight:bold;">
+          {{ patent.name }}
+        </span>
+        <br>
+        {% if patent.registration_year %}
+          <span class="patent-year" style="color:#888;">
+            <i class="fa fa-calendar"></i> 등록년도: {{ patent.registration_year }}
+          </span>
+          <br>
+        {% endif %}
+        {% if patent.application_year %}
+          <span class="patent-year" style="color:#888;">
+            <i class="fa fa-calendar"></i> 출원년도: {{ patent.application_year }}
+          </span>
+          <br>
+        {% endif %}
+        {% if patent.credentialid %}
+          <span class="patent-id" style="color:#888;">
+            <i class="fa fa-id-card"></i> 번호: {{ patent.credentialid }}
+          </span>
+          <br>
+        {% endif %}
+        {% if patent.inventors %}
+          <span class="patent-inventors" style="color:#555;">
+            <i class="fa fa-user"></i> 발명자: {{ patent.inventors }}
+          </span>
+          <br>
+        {% endif %}
+      </div>
+      <hr style="margin:10px 0; border-top:1px dashed #eee;">
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

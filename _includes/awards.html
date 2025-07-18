@@ -1,0 +1,37 @@
+{% assign awards = site.data.data.awards %}
+{% if awards %}
+<section class="section awards-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-trophy fa-stack-1x fa-inverse"></i>
+    </span>
+    Awards
+  </h2>
+  <div class="awards-list">
+    {% for award in awards %}
+      <div class="item" style="margin-bottom:18px;">
+        {% if award.title %}
+          <span class="award-title" style="font-weight:bold;">
+            {{ award.title }}
+          </span>
+          <br>
+        {% endif %}
+        {% if award.participants %}
+          <span class="award-participants" style="color:#888;">
+            <i class="fa fa-users"></i> 참여 인원: {{ award.participants }}명
+          </span>
+          <br>
+        {% endif %}
+        {% if award.institution %}
+          <span class="award-institution" style="color:#555;">
+            <i class="fa fa-university"></i> 기관: {{ award.institution }}
+          </span>
+          <br>
+        {% endif %}
+      </div>
+      <hr style="margin:10px 0; border-top:1px dashed #eee;">
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
